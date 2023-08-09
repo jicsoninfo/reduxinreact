@@ -1,28 +1,36 @@
+"use client"
 import React, { Component } from 'react';
 import Header from "./containers/Header";
-//import ProductListing from "./containers/ProductListing";
- import Product from "./containers/Product";
-// import {BrowserRouter, Routes, Route } from "react-router-dom";
-import { Route } from "react-router-dom"
+import ProductListing from "./containers/ProductListing";
+import ProductDetails from './containers/ProductDetails';
+ //import Product from "./containers/Product";
+ import {BrowserRouter,Routes, Route} from "react-router-dom";
+//import { Route } from "react-router-dom"
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-           <h1>Hello</h1> 
+        {/* <div className="App-header"> */}
+           {/* <h1>Hello</h1>  */}
+          
+          {/* <Product/> */}
+        
+         
+          <BrowserRouter>
           <Header /> 
-          <Product/>
-          {/* <BrowserRouter>
           <Routes>                  
-            <Route path="/"  element={<Product/>} />
+            <Route path="/"  element={<ProductListing/>} />
+            <Route path="/product/:productId" element={<ProductDetails/>} />
+            <Route>404 Not Found!</Route>
           </Routes>
-          </BrowserRouter>  */}
+          </BrowserRouter>
         </div>
-     </div>
+    //  </div>
     );
     }
 }
+
 
 export default App;

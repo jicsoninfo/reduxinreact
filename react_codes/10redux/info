@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=MEtQTB_xyMc
+https://youtu.be/MEtQTB_xyMc
+React JS REDUX crud actions using JSON-SERVER API | React redux crud actions | React Redux tutorial
+
+https://youtu.be/MEtQTB_xyMc
+
+sudo chmod -R 777 lib/
+sudo chmod -R 777 bin/
+
+npm install -g json-server
+json-server --watch src/Data/db.json --port 8000
+
+npm run dev
